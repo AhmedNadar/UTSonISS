@@ -1,4 +1,4 @@
 Rails.application.routes.draw do
   root 'visitors#new'
-  post 'contact', to: 'contacts#process_form'
+  resource :contacts, only: [:new, :create]
 end
