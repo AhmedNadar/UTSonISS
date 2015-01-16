@@ -21,6 +21,7 @@ gem 'gibbon' #access to the MailChimp API
 gem 'google_drive' #use Google Drive spreadsheets for data storage
 gem 'high_voltage' #  for static pages like “about”
 gem 'simple_form' # forms made easy
+gem 'rails_layout'
 
 group :development, :test do
   gem 'byebug'
