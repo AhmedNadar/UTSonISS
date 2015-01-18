@@ -15,13 +15,12 @@ gem 'therubyracer', platforms: :ruby
 gem 'sprockets-rails', '~>2.2.2'
 gem 'bootstrap-sass', '~> 3.3.1'
 gem 'autoprefixer-rails'
-gem 'activerecord-tableless' # helps to use Rails without a database
+gem "activerecord-tableless", ">= 1.3.4",  git:'https://github.com/david135/activerecord-tableless.git' # helps to use Rails without a database
 gem 'figaro' # configuration framework
 gem 'gibbon' #access to the MailChimp API
 gem 'google_drive' #use Google Drive spreadsheets for data storage
 gem 'high_voltage' #  for static pages like “about”
 gem 'simple_form' # forms made easy
-gem 'rails_layout'
 
 group :development, :test do
   gem 'byebug'

@@ -1,22 +1,35 @@
-class Contact < Activerecord::Base
-  has_no_table
+  # This is the virtual model in rails which has no database table associated with it
+class Contact < ActiveRecord::Base
+  # It uses has_no_table plugin to create virtual model
+  # This can also be done using following lines of code
+  #
+  # def self.columns() @columns ||= []; end
+  # def self.column(name, sql_type = nil, default = nil, null = true)
+  #  columns << ActiveRecord::ConnectionAdapters::Column.new(name.to_s, default, sql_type.to_s, null)
+  # end
 
+  has_no_table
+  #insert the names of the form fields here
   column :name, :string
   column :email, :string
-  column :contect, :string
+  column :content, :string
 
-  validate_presence_of :name, :email, :contact
-  validates_format_of :email, with: /\A[-a-z0-9_+\.]+\@([-a-z0-9]+\.)+[a-z0-9]{2,4}\z/i,
-                              :on: :create, :message => "is invalid"
-  validates_length_of :content, :maximum: 500
+  validates_presence_of :name
+  validates_presence_of :email
+  validates_presence_of :content
+  validates_format_of   :email, with: /\A[-a-z0-9_+\.]+\@([-a-z0-9]+\.)+[a-z0-9]{2,4}\z/i
+  validates_length_of   :content, maximum: 500
 
   def update_spreadsheet
-    connection = GooglrDrive.login(ENV["GMAIL_USERNAME"], END["GMAIL_PASSWORD"])
+    # create a connection with google drive
+    # The follwing line donsn't work. Writing explicit credentials will do the trick.
+    # Not safe but it works,
+    connection = GoogleDrive.login_with_oauth(ENV["GMAIL_USERNAME"], ENV["GMAIL_PASSWORD"])
     ss = connection.spreadsheet_by_title("UTS on ISS")
-    if ss.nil?
+    if ss.nil? # check of spread sheet exisit if not, creat one below
       ss = connection.create_spreadsheet("UTS on ISS")
     end
-    ws = ss.worksheets[0]
+    ws = ss.worksheets[0] # use only one spread sheet to save our data in it
     last_row = 1 + ws.num_rows
     ws[last_row, 1] = Time.new
     ws[last_row, 2] = self.name

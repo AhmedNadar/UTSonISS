@@ -4,7 +4,7 @@ class ContactsController < ApplicationController
   end
 
   def create
-    @contat = Contact.mew(secure_params)
+    @contact = Contact.new(secure_params)
     if @contact.valid?
       @contact.update_spreadsheet
       # todo send messge
@@ -17,6 +17,6 @@ class ContactsController < ApplicationController
 
   private
   def secure_params
-    params.require(:contact).permit(:name, :email, :contect)
+    params.require(:contact).permit(:name, :email, :content)
   end
 end

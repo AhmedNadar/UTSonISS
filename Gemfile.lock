@@ -1,3 +1,10 @@
+GIT
+  remote: https://github.com/david135/activerecord-tableless.git
+  revision: 800393c52bd254f812e89d75f028a5d0730e79d9
+  specs:
+    activerecord-tableless (1.3.4)
+      activerecord (>= 2.3.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -30,8 +37,6 @@ GEM
       activemodel (= 4.2.0)
       activesupport (= 4.2.0)
       arel (~> 6.0)
-    activerecord-tableless (1.3.4)
-      activerecord (>= 2.3.0)
     activesupport (4.2.0)
       i18n (~> 0.7)
       json (~> 1.7, >= 1.7.7)
@@ -223,7 +228,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  activerecord-tableless
+  activerecord-tableless (>= 1.3.4)!
   autoprefixer-rails
   better_errors
   bootstrap-sass (~> 3.3.1)
