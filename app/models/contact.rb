@@ -24,7 +24,41 @@ class Contact < ActiveRecord::Base
     # create a connection with google drive
     # The follwing line donsn't work. Writing explicit credentials will do the trick.
     # Not safe but it works,
-    connection = GoogleDrive.login_with_oauth(ENV["GMAIL_USERNAME"], ENV["GMAIL_PASSWORD"])
+    # connection = GoogleDrive.login_with_oauth(ENV["GMAIL_USERNAME"], ENV["GMAIL_PASSWORD"])
+
+    #
+    client = Google::APIClient.new
+    auth = client.authorization
+
+    auth.client_id = ENV["CLIENT_ID"]
+    auth.client_secret = ENV["CLIENT_SECRET"]
+    # access_token = ENV["ACCESS_TOKEN"]
+
+    auth.scope =
+        "https://docs.google.com/feeds/" +
+        "https://www.googleapis.com/auth/drive " +
+        "https://spreadsheets.google.com/feeds/"
+
+    auth.redirect_uri = "http://localhost:9000/"
+    auth.refresh_token = ENV["ACCESS_TOKEN"]
+    # print("1. Open this page:\n%s\n\n" % auth.authorization_uri)
+    # print("2. Enter the authorization code shown in the page: ")
+    # auth.code = $stdin.gets.chomp
+    # auth.fetch_access_token!
+    # access_token = auth.access_token
+
+    # system'clear'
+    # print "Save your access token\n\n"
+    # print access_token
+    # print "\nSave your refresh token\n\n"
+    # print auth.refresh_token
+    # print "DONE!!!"
+
+auth.refresh!
+auth.access_token
+
+    #
+    connection = GoogleDrive.login_with_oauth(access_token)
     ss = connection.spreadsheet_by_title("UTS on ISS")
     if ss.nil? # check of spread sheet exisit if not, creat one below
       ss = connection.create_spreadsheet("UTS on ISS")
