@@ -19,8 +19,10 @@ gem "activerecord-tableless", ">= 1.3.4",  git:'https://github.com/david135/acti
 gem 'figaro' # configuration framework
 gem 'gibbon' #access to the MailChimp API
 gem 'google_drive' #use Google Drive spreadsheets for data storage
+gem 'google-api-client'
 gem 'high_voltage' #  for static pages like “about”
 gem 'simple_form' # forms made easy
+gem "font-awesome-rails"
 
 group :development, :test do
   gem 'byebug'
