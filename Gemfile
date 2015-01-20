@@ -25,14 +25,21 @@ gem 'simple_form' # forms made easy
 gem "font-awesome-rails"
 
 group :development, :test do
-  gem 'byebug'
-  gem 'web-console', '~> 2.0'
-  gem 'spring'
+  gem 'sqlite3'
+  gem 'byebug',      '3.4.0'
+  gem 'web-console', '2.0.0.beta3'
+  gem 'spring',      '1.1.3'
 end
 
 group :development do
-  gem 'sqlite3'
   gem 'better_errors' # helps when things go wrong
   gem 'quiet_assets' # suppresses distracting messages in the log
   gem 'rails_layout' # generates files for an application layout
 end
+
+group :production do
+  gem 'pg'
+  gem 'rails_12factor', '0.0.2'
+  gem 'thin',           '1.6.3'
+end
+
