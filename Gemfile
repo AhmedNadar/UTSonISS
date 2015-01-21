@@ -9,7 +9,7 @@ gem 'jquery-rails'
 gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'bootstrap-sass', '~> 3.3.3'
-gem 'sass-rails', '>= 3.2'
+gem 'sass-rails', '~> 5.0.1'
 gem 'therubyracer', platforms: :ruby
 gem 'autoprefixer-rails'
 
@@ -24,7 +24,7 @@ gem 'simple_form' # forms made easy
 gem "font-awesome-rails"
 
 group :development, :test do
-  gem 'sqlite3'
+  gem 'sqlite3', '1.3.10'
   gem 'byebug', '3.4.0'
   gem 'web-console', '2.0.0.beta3'
   gem 'spring', '1.1.3'
@@ -36,8 +36,11 @@ group :development do
   gem 'rails_layout' # generates files for an application layout
 end
 
+group :development, :production do
+  gem 'pg', '0.18.1'
+end
+
 group :production do
-  gem 'pg'
-  gem 'rails_12factor'
+  gem 'rails_12factor', '0.0.3'
   gem 'thin'
 end
