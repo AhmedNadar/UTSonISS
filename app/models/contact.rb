@@ -1,18 +1,11 @@
-  # This is the virtual model in rails which has no database table associated with it
-class Contact < ActiveRecord::Base
-  # It uses has_no_table plugin to create virtual model
-  # This can also be done using following lines of code
-  #
-  # def self.columns() @columns ||= []; end
-  # def self.column(name, sql_type = nil, default = nil, null = true)
-  #  columns << ActiveRecord::ConnectionAdapters::Column.new(name.to_s, default, sql_type.to_s, null)
-  # end
+# This is the virtual model in rails which has no database table associated with it
+require "google_drive_v0"
 
-  has_no_table
-  #insert the names of the form fields here
-  column :name, :string
-  column :email, :string
-  column :content, :string
+class Contact
+  include ActiveModel::Model
+  attr_accessor :name, :string
+  attr_accessor :email, :string
+  attr_accessor :content, :string
 
   validates_presence_of :name
   validates_presence_of :email
@@ -20,62 +13,8 @@ class Contact < ActiveRecord::Base
   validates_format_of   :email, with: /\A[-a-z0-9_+\.]+\@([-a-z0-9]+\.)+[a-z0-9]{2,4}\z/i
   validates_length_of   :content, maximum: 500
 
-
-    # Setup credentials
-    CLIENT_ID     = ENV["CLIENT_ID"]
-    CLIENT_SECRET = ENV["CLIENT_SECRET"]
-    OAUTH_SCOPE   = 'https://docs.google.com/feeds/' +
-                    'https://docs.googleusercontent.com/' +
-                    'https://www.googleapis.com/auth/drive' +
-                    'https://spreadsheets.google.com/feeds/'
-
-    REDIRECT_URI  = 'http://localhost:9000/oauth2callback'
-
-
-
   def update_spreadsheet
-
-
-    client = Google::APIClient.new
-    # Request authorization
-    client.authorization.client_id = CLIENT_ID
-    client.authorization.client_secret = CLIENT_SECRET
-    client.authorization.scope = OAUTH_SCOPE
-    client.authorization.redirect_uri = REDIRECT_URI
-
-    auth = client.authorization
-
-    # auth.client_id = ENV["CLIENT_ID"]
-    # auth.client_secret = ENV["CLIENT_SECRET"]
-    # access_token = ENV["ACCESS_TOKEN"]
-
-    # auth.scope =
-    #     "https://docs.google.com/feeds/" +
-    #     "https://www.googleapis.com/auth/drive " +
-    #     "https://spreadsheets.google.com/feeds/"
-
-    # auth.redirect_uri = "http://localhost:9000/"
-    auth_url = auth.authorization_uri
-    auth.code = authorization_code
-    auth.refresh_token = ENV["ACCESS_TOKEN"]
-    # print("1. Open this page:\n%s\n\n" % auth.authorization_uri)
-    # print("2. Enter the authorization code shown in the page: ")
-    # auth.code = $stdin.gets.chomp
-    # auth.fetch_access_token!
-    # access_token = auth.access_token
-
-    # system'clear'
-    # print "Save your access token\n\n"
-    # print access_token
-    # print "\nSave your refresh token\n\n"
-    # print auth.refresh_token
-    # print "DONE!!!"
-
-auth.refresh!
-auth.access_token
-
-    #
-    connection = GoogleDrive.login_with_oauth(access_token)
+    connection = GoogleDriveV0.login(ENV["GMAIL_USERNAME"], ENV["GMAIL_PASSWORD"])
     ss = connection.spreadsheet_by_title("UTS on ISS")
     if ss.nil? # check of spread sheet exisit if not, creat one below
       ss = connection.create_spreadsheet("UTS on ISS")
