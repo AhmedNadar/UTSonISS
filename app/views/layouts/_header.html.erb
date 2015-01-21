@@ -17,13 +17,33 @@
           <!-- END TIMER -->
           <div class="col-lg-4 col-lg-offset-4 mt centered">
             <h4>Keep in touch here</h4>
-            <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
-            <i class="fa fa-camera-retro fa-5x"></i>
-            <span class="fa-stack fa-lg">
-              <i class="fa fa-square-o fa-stack-2x"></i>
-              <i class="fa fa-twitter fa-stack-1x"></i>
-            </span>
-            fa-twitter on fa-square-o<br>
+
+<style>
+  .calendar-text { margin-top: .3em; }
+  .facebook, .twitter { margin-top: .2em; }
+
+</style>
+<div class="stacked-icons">
+  <%= link_to "#" do %>
+    <span class="fa-stack fa-3x">
+      <i class="fa fa-calendar-o fa-stack-2x"></i>
+      <strong class="fa-stack-1x calendar-text">2</strong>
+    </span>
+  <% end %>
+  <%= link_to "#" do %>
+    <span class="fa-stack fa-3x">
+      <i class="fa fa-twitter fa-stack-2x"></i>
+      <strong class="fa-stack-1x fa-stack-text twitter"></strong>
+    </span>
+  <% end %>
+  <%= link_to "#" do %>
+    <span class="fa-stack fa-3x">
+      <i class="fa fa-facebook fa-stack-2x"></i>
+      <strong class="fa-stack-1x fa-stack-text facebook"></strong>
+    </span>
+  <% end %>
+</div>
+
             <!--
             <form class="form-inline" role="form">
               <div class="form-group">

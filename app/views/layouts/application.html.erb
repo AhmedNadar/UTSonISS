@@ -4,14 +4,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><%= content_for?(:title) ? yield(:title) + " UTS on ISS kick starter campaign" : "UTS on ISS kick starter campaign" %></title>
     <meta name="description" content="<%= content_for?(:description) ? yield(:description) : "UTS on ISS kick starter campaign" %>">
-    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-    <%= csrf_meta_tags %>
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
       <script src="assets/html5shiv.js"></script>
       <script src="assets/respond.min.js"></script>
     <![endif]-->
+    <%= stylesheet_link_tag 'application', media: 'all' %>
+    <%= javascript_include_tag 'application' %>
+    <%= csrf_meta_tags %>
     <meta charset="utf-8">
     <meta name="description" content="UTS Students going out of this world to the ISS with their Scince experments.">
     <meta name="author" content="Ahmed Nadar">
@@ -21,12 +21,14 @@
   </head>
   <body class="nomobile">
     <header>
-      <%= render 'layouts/navigation' %>
+      <%#= render 'layouts/navigation' %>
       <%= render 'layouts/header' %>
     </header>
     <main role="main">
-       <%= render 'layouts/messages' %>
+       <%#= render 'layouts/messages' %>
        <%= yield %>
     </main>
   </body>
 </html>
+
+
