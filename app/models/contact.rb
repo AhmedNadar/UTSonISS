@@ -20,26 +20,43 @@ class Contact < ActiveRecord::Base
   validates_format_of   :email, with: /\A[-a-z0-9_+\.]+\@([-a-z0-9]+\.)+[a-z0-9]{2,4}\z/i
   validates_length_of   :content, maximum: 500
 
-  def update_spreadsheet
-    # create a connection with google drive
-    # The follwing line donsn't work. Writing explicit credentials will do the trick.
-    # Not safe but it works,
-    # connection = GoogleDrive.login_with_oauth(ENV["GMAIL_USERNAME"], ENV["GMAIL_PASSWORD"])
 
-    #
+    # Setup credentials
+    CLIENT_ID     = ENV["CLIENT_ID"]
+    CLIENT_SECRET = ENV["CLIENT_SECRET"]
+    OAUTH_SCOPE   = 'https://docs.google.com/feeds/' +
+                    'https://docs.googleusercontent.com/' +
+                    'https://www.googleapis.com/auth/drive' +
+                    'https://spreadsheets.google.com/feeds/'
+
+    REDIRECT_URI  = 'http://localhost:9000/oauth2callback'
+
+
+
+  def update_spreadsheet
+
+
     client = Google::APIClient.new
+    # Request authorization
+    client.authorization.client_id = CLIENT_ID
+    client.authorization.client_secret = CLIENT_SECRET
+    client.authorization.scope = OAUTH_SCOPE
+    client.authorization.redirect_uri = REDIRECT_URI
+
     auth = client.authorization
 
-    auth.client_id = ENV["CLIENT_ID"]
-    auth.client_secret = ENV["CLIENT_SECRET"]
+    # auth.client_id = ENV["CLIENT_ID"]
+    # auth.client_secret = ENV["CLIENT_SECRET"]
     # access_token = ENV["ACCESS_TOKEN"]
 
-    auth.scope =
-        "https://docs.google.com/feeds/" +
-        "https://www.googleapis.com/auth/drive " +
-        "https://spreadsheets.google.com/feeds/"
+    # auth.scope =
+    #     "https://docs.google.com/feeds/" +
+    #     "https://www.googleapis.com/auth/drive " +
+    #     "https://spreadsheets.google.com/feeds/"
 
-    auth.redirect_uri = "http://localhost:9000/"
+    # auth.redirect_uri = "http://localhost:9000/"
+    auth_url = auth.authorization_uri
+    auth.code = authorization_code
     auth.refresh_token = ENV["ACCESS_TOKEN"]
     # print("1. Open this page:\n%s\n\n" % auth.authorization_uri)
     # print("2. Enter the authorization code shown in the page: ")
