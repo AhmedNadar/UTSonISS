@@ -1,32 +1,55 @@
 <!DOCTYPE html>
-<html>
+<html class="no-js" lang="en">
   <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,700' rel='stylesheet' type='text/css'>
+    <link href="http://fonts.googleapis.com/css?family=Roboto:500,100,300,700,400" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lobster">
+    <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Lato:400,700'>
+    <style type="text/css">.gm-style .gm-style-mtc label,.gm-style .gm-style-mtc div{font-weight:400;}</style>
+    <style type="text/css">.gm-style .gm-style-cc span,.gm-style .gm-style-cc a,.gm-style .gm-style-mtc div{font-size:10px;}</style>
+    <style type="text/css">@media print {  .gm-style .gmnoprint, .gmnoprint {    display:none;  }}@media screen {  .gm-style .gmnoscreen, .gmnoscreen {    display:none;  }}</style>
+    <style type="text/css">.gm-style{font-family:Roboto,Arial,sans-serif;font-size:11px;font-weight:400;text-decoration:none;}</style>
+    <%= stylesheet_link_tag 'application', media: 'all' %>
+    <%= javascript_include_tag 'application' %>
+    <%= csrf_meta_tags %>
+    <!-- Meta UTF8 charset -->
+    <meta charset="utf-8">
+    <!-- Viewport specification for mobile devices -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Basic page information -->
+    <meta name="description" content="<%= content_for?(:description) ? yield(:description) : "UTS Students going out of this world to the ISS with their Scince experments" %>">
+    <meta name="keywords" content="UTS, Toronto, ISS, Space, NASA">
+    <meta name="author" content="Ahmed Nadar">
     <title><%= content_for?(:title) ? yield(:title) + " UTS on ISS kick starter campaign" : "UTS on ISS kick starter campaign" %></title>
-    <meta name="description" content="<%= content_for?(:description) ? yield(:description) : "UTS on ISS kick starter campaign" %>">
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- Fav Icon -->
+    <link rel="shortcut icon" href="/assets/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="assets/apple-touch-icon-57-precomposed.png">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
       <script src="assets/html5shiv.js"></script>
       <script src="assets/respond.min.js"></script>
     <![endif]-->
-    <%= stylesheet_link_tag 'application', media: 'all' %>
-    <%= javascript_include_tag 'application' %>
-    <%= csrf_meta_tags %>
-    <meta charset="utf-8">
-    <meta name="description" content="UTS Students going out of this world to the ISS with their Scince experments.">
-    <meta name="author" content="Ahmed Nadar">
-    <link rel="shortcut icon" href="/assets/favicon.ico">
-    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,700' rel='stylesheet' type='text/css'>
   </head>
-  <body class="nomobile">
-    <header>
-      <%#= render 'layouts/navigation' %>
-      <%= render 'layouts/header' %>
-    </header>
+  <body cz-shortcut-listen="true">
+    <!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    <%= render 'layouts/header' %>
+    <%= render 'layouts/soon' %>
+    <!-- Content -->
+    <div class="container">
+      <%= render 'layouts/subscribe' %>
+      <%= yield %>
+      <%= render 'layouts/social' %>
+    </div>
     <main role="main">
-       <%#= render 'layouts/messages' %>
-       <%= yield %>
+       <%= render 'layouts/messages' %>
     </main>
   </body>
 </html>
