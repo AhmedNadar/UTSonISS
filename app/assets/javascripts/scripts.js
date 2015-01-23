@@ -4,12 +4,12 @@ jQuery(document).ready(function() {
         Background slideshow
     */
     $('.coming-soon').backstretch([
-      "assets/1.jpg"
-    , "assets/2.jpg"
-    , "assets/3.jpg"
-    , "assets/4.jpg"
-    , "assets/5.jpg"
-    , "assets/6.jpg"
+      "/assets/1.jpg"
+    , "/assets/2.jpg"
+    , "/assets/3.jpg"
+    , "/assets/4.jpg"
+    , "/assets/5.jpg"
+    , "/assets/6.jpg"
     ], {duration: 5000, fade: 700});
 
     /*

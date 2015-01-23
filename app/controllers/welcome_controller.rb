@@ -1,5 +1,5 @@
 class WelcomeController < ApplicationController
 def index
-  redirect_to new_contacts_path
+  redirect_to welcome_path
 end
 end
