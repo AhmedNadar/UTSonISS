@@ -1,4 +1,3 @@
-
 jQuery(document).ready(function() {
 
     /*
@@ -8,7 +7,10 @@ jQuery(document).ready(function() {
       "assets/backgrounds/1.jpg"
     , "assets/backgrounds/2.jpg"
     , "assets/backgrounds/3.jpg"
-    ], {duration: 3000, fade: 750});
+    , "assets/backgrounds/4.jpg"
+    , "assets/backgrounds/5.jpg"
+    , "assets/backgrounds/6.jpg"
+    ], {duration: 5000, fade: 700});
 
     /*
         Countdown initializer
@@ -46,34 +48,34 @@ jQuery(document).ready(function() {
     /*
         Subscription form
     */
-    $('.success-message').hide();
-    $('.error-message').hide();
+    // $('.success-message').hide();
+    // $('.error-message').hide();
 
-    $('.subscribe form').submit(function() {
-        var postdata = $('.subscribe form').serialize();
-        $.ajax({
-            type: 'POST',
-            url: 'assets/sendmail.php',
-            data: postdata,
-            dataType: 'json',
-            success: function(json) {
-                if(json.valid == 0) {
-                    $('.success-message').hide();
-                    $('.error-message').hide();
-                    $('.error-message').html(json.message);
-                    $('.error-message').fadeIn();
-                }
-                else {
-                    $('.error-message').hide();
-                    $('.success-message').hide();
-                    $('.subscribe form').hide();
-                    $('.success-message').html(json.message);
-                    $('.success-message').fadeIn();
-                }
-            }
-        });
-        return false;
-    });
+    // $('.subscribe form').submit(function() {
+    //     var postdata = $('.subscribe form').serialize();
+    //     $.ajax({
+    //         type: 'POST',
+    //         url: 'assets/sendmail.php',
+    //         data: postdata,
+    //         dataType: 'json',
+    //         success: function(json) {
+    //             if(json.valid == 0) {
+    //                 $('.success-message').hide();
+    //                 $('.error-message').hide();
+    //                 $('.error-message').html(json.message);
+    //                 $('.error-message').fadeIn();
+    //             }
+    //             else {
+    //                 $('.error-message').hide();
+    //                 $('.success-message').hide();
+    //                 $('.subscribe form').hide();
+    //                 $('.success-message').html(json.message);
+    //                 $('.success-message').fadeIn();
+    //             }
+    //         }
+    //     });
+    //     return false;
+    // });
 
 });
 
