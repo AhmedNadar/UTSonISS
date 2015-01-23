@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
   root 'welcome#index'
-  get "welcome", to: 'contacts#new', as: :welcome
+  get "launch", to: 'contacts#new', as: :launch
   resource :contacts, only: [:new, :create]
 end
