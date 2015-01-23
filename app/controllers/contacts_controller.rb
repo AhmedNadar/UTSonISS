@@ -12,7 +12,7 @@ class ContactsController < ApplicationController
       flash[:notice] = "Thanks #{@contact.name.capitalize} for your message!"
       redirect_to launch_path
     else
-      render :new
+      render new_contacts_path
     end
   end
 
