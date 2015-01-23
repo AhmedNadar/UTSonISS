@@ -10,7 +10,7 @@ class ContactsController < ApplicationController
       @contact.update_spreadsheet
       # todo send messge
       flash[:notice] = "Thanks #{@contact.name.capitalize} for your message!"
-      redirect_to root_path
+      redirect_to welcome_path
     else
       render new_contacts_path
     end
