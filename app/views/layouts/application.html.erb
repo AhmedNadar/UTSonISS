@@ -43,14 +43,11 @@
     <%= render 'layouts/soon' %>
     <!-- Content -->
     <div class="container">
+      <%= render 'layouts/messages' %>
       <%#= render 'layouts/subscribe' %>
       <%= yield %>
       <%= render 'layouts/social' %>
       <% content_for :title do %>Contact<% end %>
-      <span>ahmed nadar</span>
     </div>
-    <main role="main">
-       <%= render 'layouts/messages' %>
-    </main>
   </body>
 </html>

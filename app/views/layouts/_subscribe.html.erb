@@ -1,6 +1,6 @@
 <!-- subscribe -->
 <div class="row">
-  <div class="col-sm-8 col-sm-offset-2 subscribe">
+  <div class="col-sm-12 col-xs-12 subscribe">
     <h3>We are almost ready to launch</h3>
     <p>Join us now and you'll be one of the first to know when we're ready:</p>
     <%= simple_form_for @contact, {class: "col-sm-8 col-sm-offset-2 simple_form"} do |form| %>
@@ -13,6 +13,7 @@
                             label: false,
                             input_html: {class: "col-xs-12 col-sm-6"} %>
       <%= form.input :content, as: :text,
+                            rows: 8;
                             placeholder: 'We want to hear from you. We all ears.',
                             label: false,
                             input_html: {class: "col-sm-12 col-xs-12"} %>

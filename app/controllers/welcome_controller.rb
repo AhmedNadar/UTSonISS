@@ -1,5 +1,5 @@
 class WelcomeController < ApplicationController
-  def index
-    @contact = Contact.all
-  end
+def index
+  redirect_to new_contacts_path
+end
 end

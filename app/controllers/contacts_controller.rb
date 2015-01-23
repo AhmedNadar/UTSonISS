@@ -8,7 +8,7 @@ class ContactsController < ApplicationController
     if @contact.valid?
       @contact.update_spreadsheet
       # todo send messge
-      flash[:notice] = "Message sent from #{@contact.name}"
+      flash[:notice] = "Thanks #{@contact.name.capitalize} for your message!"
       redirect_to root_path
     else
       render :new
