@@ -5,8 +5,7 @@
     <p>Join us now and you'll be one of the first to know when we're ready:</p>
     <%= simple_form_for @contact, input_html: {class: "col-sm-8 col-sm-offset-2"} do |form| %>
       <%= form.error_notification %>
-      <%= form.input :name, autofocus: true,
-                            placeholder: 'Enter your name...',
+      <%= form.input :name, placeholder: 'Enter your name...',
                             label: false,
                             wrapper_html: {class: "col-xs-12 col-sm-6"} %>
       <%= form.input :email,placeholder: 'Enter your email...',
