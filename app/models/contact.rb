@@ -14,7 +14,7 @@ class Contact
   validates_length_of   :content, maximum: 500
 
   def update_spreadsheet
-    connection = GoogleDriveV0.login_with_oauth(ENV["GMAIL_USERNAME"], ENV["GMAIL_PASSWORD"])
+    connection = GoogleDriveV0.login(ENV["GMAIL_USERNAME"], ENV["GMAIL_PASSWORD"], proxy = nil)
     ss = connection.spreadsheet_by_title("UTS on ISS")
     if ss.nil? # check of spread sheet exisit if not, creat one below
       ss = connection.create_spreadsheet("UTS on ISS")
