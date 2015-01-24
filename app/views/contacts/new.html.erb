@@ -2,26 +2,26 @@
 <div class="row">
   <div class="subscribe col-sm-12 col-xs-12">
     <h3>We are almost ready to launch</h3>
-    <p>Join us now and you'll be one of the first to know when we're ready:</p>
+    <!-- <p>Join us now and you'll be one of the first to know when we're ready:</p> -->
 
-    <%= simple_form_for @contact, input_html: {class: "col-sm-8 col-sm-offset-2"} do |form| %>
-      <%= form.error_notification %>
-      <%= form.input :name, placeholder: 'Enter your name...',
+    <%#= simple_form_for @contact, input_html: {class: "col-sm-8 col-sm-offset-2"} do |form| %>
+      <%#= form.error_notification %>
+      <%#= form.input :name, placeholder: 'Enter your name...',
                             required: true,
                             label: false,
                             wrapper_html: {class: "col-xs-12 col-sm-6"} %>
-      <%= form.input :email,placeholder: 'Enter your email...',
+      <%#= form.input :email,placeholder: 'Enter your email...',
                             required: true,
                             label: false,
                             wrapper_html: {class: "col-xs-12 col-sm-6"} %>
-      <%= form.input :content, placeholder: 'We want to hear from you. We all ears.',
+      <%#= form.input :content, placeholder: 'We want to hear from you. We all ears.',
                             required: true,
                             as: :text,
                             input_html: { class: 'text-rows', rows:5 },
                             label: false,
                             wrapper_html: {class: "col-sm-12 col-xs-12"} %>
-      <%= form.button :submit, 'Submit', class: 'button col-sm-12'  %>
-    <% end %>
+      <%#= form.button :submit, 'Submit', class: 'button col-sm-12'  %>
+    <%# end %>
   </div>
 <div>
 
