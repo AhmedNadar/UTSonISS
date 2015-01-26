@@ -356,7 +356,8 @@ a:hover { text-decoration: none; background-color: #ffffff; }
 .social a.pinterest { background: url(social-icons/pinterest.png); }
 .social a.flickr { background: url(social-icons/flickr.png); }
 .social h5 a{width:100%; height: auto;}
-
+.made-by {color: #ccc;}
+.made-by:hover {color: #ccc; background: none;}
 
 /***** Media Queries *****/
 
