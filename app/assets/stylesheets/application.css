@@ -359,6 +359,17 @@ a:hover { text-decoration: none; background-color: #ffffff; }
 .made-by {color: #ccc;}
 .made-by:hover {color: #ccc; background: none;}
 
+/* margin top & Bottom */
+.mt {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+/* Special Margin for Wrap sections */
+.mts {
+  margin-top: -20px;
+}
+
 /* ================== CALL TO ACTION WRAP SECTIONS & HELPERS ================== */
 #cta01 {
   background: url(cta01.jpg) no-repeat center top;
