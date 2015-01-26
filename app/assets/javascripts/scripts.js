@@ -10,6 +10,7 @@ jQuery(document).ready(function() {
     , "/assets/4.jpg"
     , "/assets/5.jpg"
     , "/assets/6.jpg"
+    , "/assets/7.jpg"
     ], {duration: 5000, fade: 700});
 
     /*
