@@ -123,6 +123,10 @@ a:hover { text-decoration: none; background-color: #ffffff; color: #e75967;}
   -ms-transition: all .2s;
 }
 
+.logo a:hover {
+  background: none;
+}
+
 a:link { color: #e75967; }
 a:hover { text-decoration: none; background-color: #ffffff; }
 .call-us {
