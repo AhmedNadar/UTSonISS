@@ -222,7 +222,7 @@ a:hover { text-decoration: none; background-color: #ffffff; }
 /***** Content *****/
 
 .subscribe {
-  margin-top: 30px;
+  /*margin-top: 30px;*/
   text-align: center;
 }
 
@@ -366,7 +366,7 @@ a:hover { text-decoration: none; background-color: #ffffff; }
 /* margin top & Bottom */
 .mt {
   margin-top: 50px;
-  margin-bottom: 50px;
+  margin-bottom: 10px;
 }
 
 /* Special Margin for Wrap sections */
