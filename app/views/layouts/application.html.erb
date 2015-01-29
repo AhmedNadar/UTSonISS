@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html class="no-js" lang="en">
   <head>
-<!--     <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,700' rel='stylesheet' type='text/css'>
     <link href="http://fonts.googleapis.com/css?family=Roboto:500,100,300,700,400" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lobster"> -->
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lobster">
     <style type="text/css">.gm-style .gm-style-mtc label,.gm-style .gm-style-mtc div{font-weight:400;}</style>
     <style type="text/css">.gm-style .gm-style-cc span,.gm-style .gm-style-cc a,.gm-style .gm-style-mtc div{font-size:10px;}</style>
     <style type="text/css">@media print {  .gm-style .gmnoprint, .gmnoprint {    display:none;  }}@media screen {  .gm-style .gmnoscreen, .gmnoscreen {    display:none;  }}</style>
@@ -22,7 +22,15 @@
     <meta name="description" content="<%= content_for?(:description) ? yield(:description) : "UTS Students going out of this world to the ISS with their Science experiments" %>">
     <meta name="keywords" content="UTS, Toronto, ISS, Space, NASA">
     <meta name="author" content="Ahmed Nadar">
-    <title><%= content_for?(:title) ? yield(:title) + " UTS on ISS kick starter campaign" : "UTS on ISS kick starter campaign" %></title>
+    <title><%= content_for?(:title) ? yield(:title) + " UTS on ISS kickstarter campaign" : "UTS on ISS kickstarter campaign" %></title>
+    <!-- Open Graph http://ogp.me/ -->
+    <meta property="og:title" content="UTS on ISS kickstarter campaign" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="http://utsoniss.herokuapp.com/" />
+    <meta property="og:description" content="UTS Students going out of this world to the ISS with their Science experiments" />
+    <meta property="og:site_name" content="UTS on ISS" />
+    <meta property="og:image" content="/assets/earth.png" />
+    <!-- END Open Graph -->
     <!-- Fav Icon -->
     <link rel="shortcut icon" href="/assets/favicon.ico">
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/apple-touch-icon-144-precomposed.png">
@@ -87,6 +95,11 @@
       <script src="assets/html5shiv.js"></script>
       <script src="assets/respond.min.js"></script>
     <![endif]-->
+    <!-- START add this -->
+      <script type="text/javascript">var switchTo5x=true;</script>
+      <script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
+      <script type="text/javascript" src="http://s.sharethis.com/loader.js"></script>
+    <!-- END add this -->
   </head>
   <body cz-shortcut-listen="true">
     <!--[if lt IE 7]>
@@ -96,6 +109,7 @@
     <%= render 'layouts/soon' %>
     <!-- Content -->
     <div class="container">
+
       <%= render 'layouts/messages' %>
       <div class="row mt centered ">
         <div class="col-sm-8 col-sm-offset-2">
@@ -120,6 +134,13 @@
       })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
       ga('create', 'UA-58905911-1', 'auto');
       ga('send', 'pageview');
+    </script>
+
+    <!-- add this -->
+    <script type="text/javascript">stLight.options({publisher: "9cff9169-6d90-4942-82c7-ba4da8dfb64b", doNotHash: false, doNotCopy: false, hashAddressBar: false});</script>
+    <script>
+    var options={ "publisher": "9cff9169-6d90-4942-82c7-ba4da8dfb64b", "position": "left", "ad": { "visible": false, "openDelay": 5, "closeDelay": 0}, "chicklets": { "items": ["twitter", "facebook", "googleplus", "linkedin", "sharethis"]}};
+    var st_hover_widget = new sharethis.widgets.hoverbuttons(options);
     </script>
   </body>
 </html>
