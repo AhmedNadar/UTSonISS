@@ -14,13 +14,15 @@
 //= require jquery_ujs
 //= require bootstrap-sprockets
 //= require bootstrap
+//= require modernizr.custom
+//= require jquery.backstretch.min
+//= require jquery.countdown
+//= require jquery.themepunch.revolution.min
 //= require jquery.easing.min
 //= require classie
 //= require cbpAnimatedHeader
 //= require jqBootstrapValidation
 //= require agency
-//= require jquery.backstretch.min
-//= require jquery.countdown
-//= require jquery.themepunch.revolution.min
-//= require modernizr.custom
+
+
 //= require_tree .

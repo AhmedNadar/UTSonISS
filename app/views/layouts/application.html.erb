@@ -1,21 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <%= render 'layouts/bits/google_fonts' %>
+    <%= render 'application/google_fonts' %>
     <%= stylesheet_link_tag 'application', media: 'all' %>
-    <%= javascript_include_tag 'application' %>
+    <%#= javascript_include_tag 'application' %>
     <%= csrf_meta_tags %>
-    <%= render 'layouts/bits/meta' %>
+    <%= render 'application/meta' %>
     <title><%= content_for?(:title) ? yield(:title) + " UTS on ISS kickstarter campaign" : "UTS on ISS kickstarter campaign" %></title>
-    <%= render 'layouts/bits/open_graph' %>
+    <%= render 'application/open_graph' %>
     <!-- Fav Icon -->
     <link rel="shortcut icon" href="/assets/favicon.ico">
-    <%= render 'layouts/bits/map' %>
-    <%= render 'layouts/bits/html5_shim' %>
-    <%= render 'layouts/bits/add_this_header' %>
+    <%= render 'application/map' %>
+    <%= render 'application/html5_shim' %>
+    <%= render 'application/add_this_header' %>
   </head>
   <body id="page-top" class="index" cz-shortcut-listen="true">
-    <%= render 'layouts/bits/browsehappy' %>
+    <%= render 'application/browsehappy' %>
     <%= render 'layouts/navigation' %>
     <%#= render 'layouts/header' %>
     <%= render 'layouts/soon' %>
@@ -30,9 +30,10 @@
       <%= render 'layouts/contact' %>
     <div class="container">
       <%= render 'layouts/social' %>
-      <%= render 'layouts/bits/ads_footer' %>
+      <%= render 'application/ads_footer' %>
     </div>
-    <%= render 'layouts/bits/analytics' %>
-    <%= render 'layouts/bits/add_this_footer' %>
+    <%= render "javascript" %>
+    <%#= render 'application/analytics' %>
+    <%= render 'application/add_this_footer' %>
   </body>
 </html>
