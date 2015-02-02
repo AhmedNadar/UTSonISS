@@ -265,16 +265,16 @@ fieldset[disabled] .btn-xl.active {
 }
 
 header {
-    text-align: center;
+   /* text-align: center;
     color: #fff;
     background-attachment: scroll;
-    background-image: url(../img/header-bg.jpg);
+    background-image: url(header-bg.jpg);
     background-position: center center;
     background-repeat: none;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
-    -o-background-size: cover;
+    -o-background-size: cover;*/
 }
 
 header .intro-text {
@@ -496,7 +496,7 @@ section h3.section-subheading {
     border-radius: 100%;
     text-align: center;
     color: #fff;
-    background-color: #fed136;
+    background-color: #e75967;
 }
 
 .timeline>li .timeline-image h4 {
@@ -653,15 +653,19 @@ section h3.section-subheading {
 aside.clients img {
     margin: 50px auto;
 }
-
+section#about {
+    background-color: #ffffff;
+}
 section#contact {
+    padding:100px 0;
     background-color: #222;
-    background-image: url(../img/map-image.png);
+    background-image: url(map-image.png);
     background-position: center;
     background-repeat: no-repeat;
 }
 
 section#contact .section-heading {
+
     color: #fff;
 }
 
