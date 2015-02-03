@@ -12,17 +12,18 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require jquery.easing.min
 //= require bootstrap-sprockets
 //= require bootstrap
+//= require ie10-viewport-bug-workaround
 //= require modernizr.custom
 //= require jquery.backstretch.min
 //= require jquery.countdown
 //= require jquery.themepunch.revolution.min
-//= require jquery.easing.min
+//= require jquery.fancybox.pack
 //= require classie
 //= require cbpAnimatedHeader
 //= require jqBootstrapValidation
+//= require retina-1.1.0
 //= require agency
-
-
 //= require_tree .

@@ -498,6 +498,13 @@ section h3.section-subheading {
     color: #fff;
     background-color: #e75967;
 }
+.timeline>li .timeline-image a
+{
+    color: #fff;
+}
+.timeline>li .timeline-image a:hover{
+    color: #fed136;
+}
 
 .timeline>li .timeline-image h4 {
     margin-top: 12px;
@@ -653,8 +660,12 @@ section h3.section-subheading {
 aside.clients img {
     margin: 50px auto;
 }
-section#about {
+section#about, section#history{
     background-color: #ffffff;
+    padding: 100px;
+}
+section#about .mt{
+    margin-top: 0;
 }
 section#contact {
     padding:100px 0;
@@ -873,4 +884,6 @@ body {
     webkit-tap-highlight-color: #fed136;
 }
 
-
+#gads{
+    overflow: hidden;
+}
