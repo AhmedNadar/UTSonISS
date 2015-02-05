@@ -1,4 +1,5 @@
-<div id="sponsors">
+<!-- sponsors -->
+<section id="sponsors">
   <div class="container">
     <div class="row mt centered">
       <div class="col-lg-4 col-lg-offset-4">
@@ -6,26 +7,49 @@
         <hr>
       </div><!-- /col-lg-4 -->
     </div><!-- /row -->
-    <div class="row centered">
-      <div class="col-xs-5 col-sm-2 col-md-offset-3">
-      <!-- "col-lg-3 pt" -->
-        <%= link_to "http://www.css.ca/" do %>
-          <%= image_tag "supporters/02.png", class: "img-responsive", alt: "Canadian Space Society", title: "Canadian Space Society" %>
-          <div class="caption">
-            <h4>Canadian Space Society</h4>
-          </div>
-        <% end %>
-      </div>
-      <div class="col-xs-5 col-sm-2 col-md-offset-2">
-        <%= link_to "http://www.galaxytoppers.com/" do %>
-          <%= image_tag "supporters/01.png", class: "img-responsive", alt: "Galaxy Toppers", title: "Galaxy Toppers" %>
-          <div class="caption">
-            <h4>Galaxy Toppers</h4>
-          </div>
-        <% end %>
-      </div>
+    <div class="row">
+      <div class="centered col-sm-12 col-xs-12">
+        <div class="col-xs-5 col-sm-2">
+          <%= link_to "http://www.css.ca/" do %>
+            <%= image_tag "supporters/canadian_space_society.png", class: "img-responsive", alt: "Canadian Space Society", title: "Canadian Space Society" %>
+            <div class="caption">
+              <h4>Canadian Space Society</h4>
+            </div>
+          <% end %>
+        </div>
+        <div class="col-xs-5 col-sm-2">
+          <%= link_to "http://www.galaxytoppers.com/" do %>
+            <%= image_tag "supporters/galaxy_toppers.png", class: "img-responsive", alt: "Galaxy Toppers", title: "Galaxy Toppers" %>
+            <div class="caption">
+              <h4>Galaxy Toppers</h4>
+            </div>
+          <% end %>
+        </div>
+        <div class="col-xs-5 col-sm-2">
+          <%= link_to "http://www.utschools.ca/parents/utspa.aspx" do %>
+            <%= image_tag "supporters/utschools.gif", class: "img-responsive", alt: "UTS Parents Association", title: "UTS Parents Association" %>
+            <div class="caption">
+              <h4>UTSPA (UTS Parents Association)</h4>
+            </div>
+          <% end %>
+        </div>
+        <div class="col-xs-5 col-sm-2">
+          <%= link_to "http://www.utschools.ca/discoveruts/historyandtradition.aspx" do %>
+            <%= image_tag "supporters/utschools.gif", class: "img-responsive", alt: "Michaele Robertson and Barry Wansbrough", title: "Michaele Robertson and Barry Wansbrough" %>
+            <div class="caption">
+              <h4>Michaele Robertson &amp; Barry Wansbrough</h4>
+            </div>
+          <% end %>
+        </div>
+        <div class="col-xs-5 col-sm-2">
+          <%= link_to "http://www.kanetix.ca" do %>
+            <%= image_tag "supporters/kanetix.png", class: "img-responsive", alt: "Kanetix", title: "Kanetix" %>
+            <div class="caption">
+              <h4>Kanetix</h4>
+            </div>
+          <% end %>
+        </div>
+      </div><!-- /col-sm-12 -->
     </div><!-- /row -->
   </div><!-- /container -->
-</div>
-
-
+</section>

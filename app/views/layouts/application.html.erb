@@ -17,14 +17,13 @@
   <body id="page-top" class="index" cz-shortcut-listen="true">
     <%= render 'application/browsehappy' %>
     <%= render 'layouts/navigation' %>
-    <%#= render 'layouts/header' %>
     <%= render 'layouts/here' %>
-    <%#= render 'layouts/soon' %>
       <%= yield %>
       <%= render 'pages/about' %>
       <%= render 'layouts/action2' %>
       <%= render 'pages/history' %>
       <%= render 'pages/team' %>
+      <%= render 'application/ads_footer' %>
       <%= render 'layouts/action1' %>
       <%= render 'pages/sponsors' %>
       <%= render 'pages/contact' %>
@@ -33,7 +32,6 @@
       <%= render 'application/ads_footer' %>
     </div>
     <%= render "javascript" %>
-    <%#= render 'application/analytics' %>
     <%= render 'application/add_this_footer' %>
   </body>
 </html>
