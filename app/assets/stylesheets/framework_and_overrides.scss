@@ -54,7 +54,6 @@ p {
 /* Links */
 a {
     word-wrap: break-word;
-
     -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
     -moz-transition: color 0.1s ease-in, background 0.1s ease-in;
     -ms-transition: color 0.1s ease-in, background 0.1s ease-in;
@@ -342,16 +341,16 @@ a:hover { text-decoration: none; background-color: #ffffff; }
 }
 
 #black h3 {
-  color: white;
+  color: #ffffff;
 }
 
 #black h4 {
-  color: white;
+  color: #ffffff;
   text-transform: uppercase
 }
 
 #black p {
-  color: white;
+  color: #ffffff;
   font-size: 16px;
   font-weight: 400;
 }
@@ -361,7 +360,7 @@ a:hover { text-decoration: none; background-color: #ffffff; }
 }
 
 #black h1 {
-  color: white;
+  color: #ffffff;
   font-size: 70px;
 }
 
@@ -433,21 +432,21 @@ a:hover { text-decoration: none; background-color: #ffffff; }
 }
 
 #cta01 h1 {
-  color: white;
+  color: #ffffff;
   font-weight: 700;
   margin-bottom: 25px;
   font-size: 60px;
 }
 
 #cta01 h2 {
-  color: white;
+  color: #ffffff;
   font-weight: 700;
   margin-bottom: 25px;
   line-height: 45px;
 }
 
 #cta01 i {
-  color: white;
+  color: #ffffff;
   font-size: 45px;
 }
 
@@ -474,7 +473,7 @@ a:hover { text-decoration: none; background-color: #ffffff; }
 }
 
 #cta02 h2 {
-  color: white;
+  color: #ffffff;
   font-weight: 700;
   margin-bottom: 25px;
 }
@@ -503,24 +502,24 @@ a:hover { text-decoration: none; background-color: #ffffff; }
 
 
 #cta03 h2 {
-  color: white;
+  color: #ffffff;
   font-weight: 700;
   margin-bottom: 50px;
 }
 
 #cta03 i {
-  color: white;
+  color: #ffffff;
   font-size: 45px;
 }
 
 #cta03 p {
-  color: white;
+  color: #ffffff;
   font-size: 16px;
 }
 
 #cta-bar {
   background: #2f2f2f;
-  color: white;
+  color: #ffffff;
   padding-top: 40px;
   padding-bottom: 40px;
 
@@ -543,77 +542,8 @@ a:hover { text-decoration: none; background-color: #ffffff; }
 }
 
 #cta-bar h4 {
-  color: white;
+  color: #ffffff;
   font-weight: 400;
-}
-
-
-// .navbar-default {
-//     border-color: transparent;
-//     background-color: #222;
-// }
-
-// .navbar-default .navbar-brand {
-//     font-family: "Kaushan Script","Helvetica Neue",Helvetica,Arial,cursive;
-//     color: #fed136;
-// }
-
-// .navbar-default .navbar-brand:hover,
-// .navbar-default .navbar-brand:focus,
-// .navbar-default .navbar-brand:active,
-// .navbar-default .navbar-brand.active {
-//     color: #fec503;
-// }
-
-// .navbar-default .navbar-collapse {
-//     border-color: rgba(255,255,255,.02);
-// }
-
-// .navbar-default .navbar-toggle {
-//     border-color: #fed136;
-//     background-color: #fed136;
-// }
-
-// .navbar-default .navbar-toggle .icon-bar {
-//     background-color: #fff;
-// }
-
-// .navbar-default .navbar-toggle:hover,
-// .navbar-default .navbar-toggle:focus {
-//     background-color: #fed136;
-// }
-
-// .navbar-default .nav li a {
-//     text-transform: uppercase;
-//     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-//     font-weight: 400;
-//     letter-spacing: 1px;
-//     color: #fff;
-// }
-
-// .navbar-default .nav li a:hover,
-// .navbar-default .nav li a:focus {
-//     outline: 0;
-//     color: #fed136;
-// }
-
-// .navbar-default .navbar-nav>.active>a {
-//     border-radius: 0;
-//     color: #fff;
-//     background-color: #fed136;
-// }
-
-// .navbar-default .navbar-nav>.active>a:hover,
-// .navbar-default .navbar-nav>.active>a:focus {
-//     color: #fff;
-//     background-color: #fec503;
-// }
-
-/***** Media Queries *****/
-
-@media (min-width: 768px){
-
-
 }
 
 /* MEDIA QUERIES */
@@ -720,30 +650,7 @@ $screen-lg-min: 1200px;
         line-height: 70px;
       }
     }
-    // .navbar-default {
-    //   padding: 25px 0;
-    //   border: 0;
-    //   background-color: transparent;
-    //   -webkit-transition: padding .3s;
-    //   -moz-transition: padding .3s;
-    //   transition: padding .3s;
-    //   .navbar-brand {
-    //     font-size: 2em;
-    //     -webkit-transition: all .3s;
-    //     -moz-transition: all .3s;
-    //     transition: all .3s;
-    //   }
-    //   .navbar-nav > .active > a {
-    //     border-radius: 3px;
-    //   }
-    //   &.navbar-shrink {
-    //     padding: 10px 0;
-    //     background-color: #222;
-    //     .navbar-brand {
-    //       font-size: 1.5em;
-    //     }
-    //   }
-    // }
+
     body {
       padding-left: 0;
       padding-right: 0;
