@@ -1,13 +1,12 @@
 <!-- social -->
 <div class="row">
     <div class="span12 social">
-<!--         <a href="https://www.facebook.com/UTSonISS" class="facebook" rel="tooltip" data-placement="top" data-original-title="Facebook community for UTS on ISS" target="_blank"></a>
-        <a href="https://twitter.com/utsoniss" class="twitter" rel="tooltip" data-placement="top" data-original-title="Twitter news for UTS on ISS" target="_blank"></a>
-        <a href="" class="dribbble" rel="tooltip" data-placement="top" data-original-title="Dribbble"></a>
-        <a href="https://plus.google.com/100767707806324090350" class="googleplus" rel="tooltip" data-placement="top" data-original-title="Google community for UTS on ISS" target="_blank"></a>
-        <a href="http://utsoniss.tumblr.com/" class="tumblr" rel="tooltip" data-placement="top" data-original-title="tumblr community for UTS on ISS" target="_blank"></a>
- -->
-
+        <%= link_to "mailto:utsoniss@gmail.com?subject=Hello!&amp;body=Dear%20UTS%20on%20ISS%20team%2C%0A", rel:"tooltip", data: {placement: "top", original_title: "Email UTS on ISS"}, target: "_blank" do %>
+          <span class="fa-stack fa-lg">
+            <i class="fa fa-circle fa-stack-2x"></i>
+            <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+          </span>
+        <% end %>
 
         <%= link_to "https://twitter.com/utsoniss", rel:"tooltip", data: {placement: "top", original_title: "Twitter news for UTS on ISS"}, target: "_blank" do %>
           <span class="fa-stack fa-lg">
