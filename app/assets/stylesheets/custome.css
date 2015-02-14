@@ -679,11 +679,16 @@ section#sponsors
   background-color: #ffffff;
   padding: 100px;
 }
+section#news{padding: 100px;}
+section#news .media p {margin-bottom: 0}
+
 section#about .mt,
-section#sponsors .mt{
+section#sponsors .mt,
+section#news .mt{
   margin-top: 0;
 }
-section#about a:link {
+section#about a:link,
+section#news a:link {
   color: #e75967;
   border-bottom: 1px dotted #e75967;
   -webkit-transition: background-color .4s linear, color .4s linear;
@@ -692,7 +697,8 @@ section#about a:link {
   -ms-transition: background-color .4s linear, color .4s linear;
   transition: background-color .4s linear, color .4s linear;
 }
-section#about a:hover {
+section#about a:hover,
+section#news a:hover {
   text-decoration: none;
   background-color: #e75967;
   color:#ffffff;
