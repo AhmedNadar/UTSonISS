@@ -680,7 +680,10 @@ section#sponsors
   padding: 100px;
 }
 section#news{padding: 100px;}
-section#news .media p {margin-bottom: 0}
+section#news .media p {
+  margin-bottom: 5px;
+  font-size: 16px;
+}
 
 section#about .mt,
 section#sponsors .mt,
