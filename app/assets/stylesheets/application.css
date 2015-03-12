@@ -13,6 +13,7 @@
  *= require_tree .
  *= bootstrap-sprockets
  *= bootstrap
+ *= require fancybox
  *= require_self
  *
  */

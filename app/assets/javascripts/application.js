@@ -13,6 +13,8 @@
 //= require jquery
 //= require jquery_ujs
 //= require jquery.easing.min
+//= require jquery.mousewheel-3.0.4.pack
+//= require fancybox
 //= require bootstrap-sprockets
 //= require bootstrap
 //= require ie10-viewport-bug-workaround
@@ -20,10 +22,11 @@
 //= require jquery.backstretch.min
 //= require jquery.countdown
 //= require jquery.themepunch.revolution.min
-//= require jquery.fancybox.pack
 //= require classie
 //= require cbpAnimatedHeader
 //= require jqBootstrapValidation
 //= require retina-1.1.0
 //= require agency
 //= require_tree .
+
+

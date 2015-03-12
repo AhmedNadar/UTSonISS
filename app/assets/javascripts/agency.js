@@ -33,14 +33,23 @@ $(function () {
 // fancyBox
 $(document).ready(function() {
   $(".various").fancybox({
-    maxWidth: 800,
-    maxHeight: 450,
-    fitToView: false,
-    width: '70%',
-    height: '70%',
-    autoSize: false,
-    closeClick: false,
-    openEffect: 'none',
-    closeEffect: 'none'
+    maxWidth     : 800,
+    maxHeight    : 450,
+    fitToView    : false,
+    autoScale    : true,
+    width        : '70%',
+    height       : '70%',
+    href         : this.href.replace(new RegExp("watch\\?v=", "i"), 'v/'),
+    title        : this.title,
+    autoSize     : false,
+    closeClick   : false,
+    openEffect   : 'none',
+    closeEffect  : 'none',
+    transitionIn : 'elastic',
+    transitionOut: 'elastic',
+    speedIn      : 600,
+    speedOut     : 200,
+    overlayShow  : true
   });
+  return false;
 });
