@@ -22,6 +22,7 @@ gem 'google-api-client'
 gem 'high_voltage' #  for static pages like “about”
 gem 'simple_form' # forms made easy
 gem "font-awesome-rails"
+gem 'fancybox2-rails', '~> 0.2.8'
 
 group :development, :test do
   gem 'sqlite3', '1.3.10'
