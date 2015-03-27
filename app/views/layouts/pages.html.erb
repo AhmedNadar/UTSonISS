@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%= render 'application/google_fonts' %>
+    <%= stylesheet_link_tag 'application', media: 'all' %>
+    <%#= javascript_include_tag 'application' %>
+    <%= csrf_meta_tags %>
+    <%= render 'application/meta' %>
+    <title><%= content_for?(:title) ? yield(:title) + " UTS on ISS kickstarter campaign" : "UTS on ISS kickstarter campaign" %></title>
+    <%= render 'application/open_graph' %>
+    <!-- Fav Icon -->
+    <link rel="shortcut icon" href="/assets/favicon.ico">
+    <%= render 'application/map' %>
+    <%= render 'application/html5_shim' %>
+    <%= render 'application/add_this_header' %>
+  </head>
+  <body id="page-top" class="index" cz-shortcut-listen="true">
+    <%= render 'application/browsehappy' %>
+    <%= render 'layouts/navigation' %>
+    <%= render 'layouts/here' %>
+    <%= yield %>
+    <%= render 'pages/sponsors' %>
+    <%= render 'pages/contact' %>
+    <div class="container">
+      <%= render 'layouts/social' %>
+      <%= render 'application/ads_footer' %>
+    </div>
+    <%= render "javascript" %>
+  </body>
+</html>
