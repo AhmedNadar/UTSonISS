@@ -30,26 +30,84 @@ $(function () {
     $("[rel='tooltip']").tooltip();
 });
 
+// carousel
+$('.carousel').carousel({
+  interval: 2000
+})
+
 // fancyBox
 $(document).ready(function() {
-  $(".various").fancybox({
-    maxWidth     : 800,
-    maxHeight    : 450,
-    fitToView    : false,
-    autoScale    : true,
-    width        : '70%',
-    height       : '70%',
-    href         : this.href.replace(new RegExp("watch\\?v=", "i"), 'v/'),
-    title        : this.title,
-    autoSize     : false,
-    closeClick   : false,
-    openEffect   : 'none',
-    closeEffect  : 'none',
-    transitionIn : 'elastic',
-    transitionOut: 'elastic',
-    speedIn      : 600,
-    speedOut     : 200,
-    overlayShow  : true
-  });
+  $("#various").click(function(){
+    $.fancybox({
+      maxWidth     : 800,
+      maxHeight    : 450,
+      fitToView    : false,
+      autoScale    : true,
+      width        : '70%',
+      height       : '70%',
+      href         : this.href.replace(new RegExp("watch\\?v=", "i"), 'v/'),
+      title        : this.title,
+      autoSize     : false,
+      closeClick   : false,
+      openEffect   : 'none',
+      closeEffect  : 'none',
+      transitionIn : 'elastic',
+      transitionOut: 'elastic',
+      speedIn      : 600,
+      speedOut     : 200,
+      overlayShow  : true,
+      'padding'       : 0,
+      'autoScale'     : false,
+      'transitionIn'  : 'none',
+      'transitionOut' : 'none',
+      'title'         : this.title,
+      'width'     : 680,
+      'height'        : 495,
+      'href'          : this.href.replace(new RegExp("watch\\?v=", "i"), 'v/'),
+      'type'          : 'swf',
+      'swf'           : {
+           'wmode'        : 'transparent',
+          'allowfullscreen'   : 'true'
+      }
+    });
   return false;
 });
+
+
+// // fancyBox
+// $(document).ready(function() {
+//   $(".various").click(function(){
+//       $.fancybox({
+//         maxWidth     : 800,
+//         maxHeight    : 450,
+//         fitToView    : false,
+//         autoScale    : true,
+//         width        : '70%',
+//         height       : '70%',
+//         href         : this.href.replace(new RegExp("watch\\?v=", "i"), 'v/'),
+//         title        : this.title,
+//         autoSize     : false,
+//         closeClick   : false,
+//         openEffect   : 'none',
+//         closeEffect  : 'none',
+//         transitionIn : 'elastic',
+//         transitionOut: 'elastic',
+//         speedIn      : 600,
+//         speedOut     : 200,
+//         overlayShow  : true,
+//         'padding'   : 0,
+//         'autoScale'   : false,
+//         'transitionIn'  : 'none',
+//         'transitionOut' : 'none',
+//         'title'     : this.title,
+//         'width'     : 640,
+//         'height'    : 385,
+//         'href'      : this.href.replace(new RegExp("watch\\?v=", "i"), 'v/'),
+//         'type'      : 'swf',
+//         'swf'     : {
+//         'wmode'       : 'transparent',
+//         'allowfullscreen' : 'true'
+//       }
+//     });
+//   return false;
+// });
