@@ -536,12 +536,36 @@ section#sponsors h4{
   font-size: 14px;
 }
 
+section#idea p{
+  font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 16px;
+  font-weight: lighter;
+}
+
 section#about,
+section#idea,
 section#history,
 section#sponsors
 {
   padding: 10px;
   background-color: #ffffff;
+}
+section#idea blockquote {
+  margin: 40px 0 20px;
+}
+section#idea p.blockquote {
+  color: rgb(216, 84, 97);
+  font-size: 4rem;
+  font-weight: 500;
+  font-style: italic;
+  font-family: "Kaushan Script";
+  line-height: 140%;
+}
+p.thanks{
+  padding: 10px;
+}
+p.thanks img{
+  width: 100%
 }
 section#news .media p {
   margin-bottom: 5px;
@@ -554,6 +578,7 @@ section#news .mt{
   margin-top: 0;
 }
 section#about a:link,
+section#idea a:link,
 section#news a:link {
   color: #e75967;
   border-bottom: 1px dotted #e75967;
@@ -564,6 +589,7 @@ section#news a:link {
   transition: background-color .4s linear, color .4s linear;
 }
 section#about a:hover,
+section#idea a:hover,
 section#news a:hover {
   text-decoration: none;
   background-color: #e75967;
@@ -792,6 +818,12 @@ ul.social-buttons li a:active {
       width: 100%;
     }
 
+section#news .media a:hover {
+  text-decoration: none;
+  color: #333333;
+}
+
+
 /*-----------------------------------------------------------*/
 /*-------------  media quireies  ----------------------------*/
 /*-----------------------------------------------------------*/
@@ -888,10 +920,11 @@ ul.social-buttons li a:active {
     text-align: left;
   }
   section {
-    padding: 150px 0;
+    padding: 50px 0;
   }
 
 section#about,
+section#idea,
 section#history,
 section#sponsors
 {
