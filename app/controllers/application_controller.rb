@@ -8,5 +8,4 @@ class ApplicationController < ActionController::Base
   def default_headers
     headers['X-Frame-Options'] = 'SAMEORIGIN'
   end
-
 end
