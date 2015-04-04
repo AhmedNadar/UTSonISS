@@ -7,6 +7,25 @@
             <div class="col-sm-8">
               <h2>News and update</h2>
               <hr>
+
+              <div class="media">
+                <div class="media-left">
+                  <%= link_to "http://www.css.ca/" do %>
+                    <%= image_tag "team/thank_you_small.png", class: "media-object", alt: "Thank You!", title: "Thank You!", data: {holder_rendered: "true"}, width: '150'%>
+                  <% end %>
+                </div>
+                <div class="media-body">
+                  <%= link_to idea_path do %>
+                    <h4 class="media-heading">A THANK YOU FOR YOUR SUPPORT IN GETTING UTS ON ISS!</h4>
+                  <% end %>
+                  <p>A message from the students as they currently work on their ongoing projects.
+                  <br>
+                    On April 25th, they will present at the Ontario Science Centre
+                  </p>
+                </div>
+              </div>
+              <br><br>
+
               <div class="media">
                 <div class="media-left">
                   <%= link_to "http://www.css.ca/" do %>
@@ -14,7 +33,7 @@
                   <% end %>
                 </div>
                 <div class="media-body">
-                  <%= link_to thankyou_path do %>
+                  <%= link_to the_idea_path do %>
                     <h4 class="media-heading">Our SSEP Organizer Suzanne Monir, wrote about how she started our program at UTS</h4>
                   <% end %>
                   <p>Opportunities in education are out there, and sometimes they are just outrageously amazing. While attending the International Astronautical conference in this school year September 2014 (Where our school met Billy Nye and Col. Hadfield), we met some other people involved in education initiatives.</p>
@@ -32,7 +51,6 @@
                   <h4 class="media-heading">Canadian Space Society featured us on their website</h4>
                   <% end %>
                   <p>An article about UTS acceptance into the SSEP program is published on the front page of the Canadian Space Society web site!  The Canadian Space Society supports and promotes STEM initiatives that promotes design and research skills.</p>
-                  <p>We are in a proud partnership for the same goal: inspiring Canada's youth and providing them what might be some life changing opportunities.</p>
                 </div>
               </div>
 
