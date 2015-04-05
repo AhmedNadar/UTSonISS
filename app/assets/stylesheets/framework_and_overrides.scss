@@ -19,6 +19,7 @@
 
 body {
   background: #f8f8f8 url('/assets/pattern.jpg');
+  background-color: rgba(237, 237, 237, 0.5);
   color: #555;
   text-align: left;
   font-family: 'Ruda', sans-serif;
@@ -427,6 +428,7 @@ a:hover { text-decoration: none; background-color: #ffffff; }
 /* ================== CALL TO ACTION WRAP SECTIONS & HELPERS ================== */
 #cta01 {
   background: url('/assets/cta01.jpg') no-repeat center top;
+  background-color: rgb(44, 44, 44);
   margin-top: 0px;
   padding-top:100px;
   text-align:center;
@@ -468,6 +470,7 @@ a:hover { text-decoration: none; background-color: #ffffff; }
 
 #cta02 {
   background: url('/assets/cta02.jpg') no-repeat center top;
+  background-color: rgb(55, 36, 18);
   margin-top: 0px;
   padding-top:100px;
   text-align:center;
@@ -496,6 +499,7 @@ a:hover { text-decoration: none; background-color: #ffffff; }
 
 #cta03 {
   background: url('/assets/cta01.jpg') no-repeat center top;
+  background-color: rgb(44, 44, 44);
   margin-top: 0px;
   padding-top:50px;
   text-align:center;
