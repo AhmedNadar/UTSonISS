@@ -555,10 +555,10 @@ section#idea blockquote {
 }
 section#idea p.blockquote {
   color: rgb(200, 76, 89);
-  font-size: 4rem;
+  font-size: 3rem;
   font-weight: 500;
   font-style: italic;
-  font-family: "Kaushan Script";
+  font-family: 'Lato';
   line-height: 140%;
 }
 p.thanks{

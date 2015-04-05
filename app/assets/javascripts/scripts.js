@@ -43,4 +43,3 @@ jQuery(document).ready(function() {
     $('.social a.pinterest').tooltip();
     $('.social a.flickr').tooltip();
 });
-
