@@ -18,7 +18,7 @@
 /* OVERALL ASPECT */
 
 body {
-  background: #f8f8f8 url(pattern.jpg);
+  background: #f8f8f8 url('/assets/pattern.jpg');
   color: #555;
   text-align: left;
   font-family: 'Ruda', sans-serif;
@@ -148,7 +148,7 @@ a:hover { text-decoration: none; background-color: #ffffff; }
 .inner-bg {
   /*padding: 55px 0 60px 0;*/
   padding: 150px 0;
-  background: url(pattern-3.png);
+  background: url('/assets/pattern-3.png');
   -moz-box-shadow: 0 1px 5px 0 rgba(0,0,0,.3) inset;
   -webkit-box-shadow: 0 1px 5px 0 rgba(0,0,0,.3) inset;
   box-shadow: 0 1px 5px 0 rgba(0,0,0,.3) inset;
@@ -201,7 +201,7 @@ a:hover { text-decoration: none; background-color: #ffffff; }
 .timer .hours-wrapper:hover,
 .timer .minutes-wrapper:hover,
 .timer .seconds-wrapper:hover {
-  background: #e75967 url(pattern-2.png);
+  background: #e75967 url('/assets/pattern-2.png');
   text-shadow: none;
 }
 
@@ -426,7 +426,7 @@ a:hover { text-decoration: none; background-color: #ffffff; }
 
 /* ================== CALL TO ACTION WRAP SECTIONS & HELPERS ================== */
 #cta01 {
-  background: url(cta01.jpg) no-repeat center top;
+  background: url('/assets/cta01.jpg') no-repeat center top;
   margin-top: 0px;
   padding-top:100px;
   text-align:center;
@@ -467,7 +467,7 @@ a:hover { text-decoration: none; background-color: #ffffff; }
 
 
 #cta02 {
-  background: url(cta02.jpg) no-repeat center top;
+  background: url('/assets/cta02.jpg') no-repeat center top;
   margin-top: 0px;
   padding-top:100px;
   text-align:center;
@@ -495,7 +495,7 @@ a:hover { text-decoration: none; background-color: #ffffff; }
 
 
 #cta03 {
-  background: url(cta01.jpg) no-repeat center top;
+  background: url('/assets/cta01.jpg') no-repeat center top;
   margin-top: 0px;
   padding-top:50px;
   text-align:center;

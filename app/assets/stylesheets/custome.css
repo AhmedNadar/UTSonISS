@@ -599,7 +599,7 @@ section#news a:hover {
 section#contact {
   padding:100px 0;
   background-color: #222;
-  background-image: url(map-image.png);
+  background-image: url('/assets/map-image.png');
   background-position: center;
   background-repeat: no-repeat;
 }
