@@ -18,8 +18,8 @@
 /* OVERALL ASPECT */
 
 body {
-  // background: #f8f8f8 url('/assets/pattern.jpg');
-  background: image-url('/assets/pattern.jpg');
+  // background: #f8f8f8 url('pattern.jpg');
+  background: url('pattern.jpg');
   background-color: rgba(237, 237, 237, 0.5);
   color: #555;
   text-align: left;
@@ -150,8 +150,8 @@ a:hover { text-decoration: none; background-color: #ffffff; }
 .inner-bg {
   /*padding: 55px 0 60px 0;*/
   padding: 150px 0;
-  // background: url('/assets/pattern-3.png');
-  background: image-url('/assets/pattern-3.png');
+  // background: url('pattern-3.png');
+  background: url('pattern-3.png');
   -moz-box-shadow: 0 1px 5px 0 rgba(0,0,0,.3) inset;
   -webkit-box-shadow: 0 1px 5px 0 rgba(0,0,0,.3) inset;
   box-shadow: 0 1px 5px 0 rgba(0,0,0,.3) inset;
@@ -204,8 +204,8 @@ a:hover { text-decoration: none; background-color: #ffffff; }
 .timer .hours-wrapper:hover,
 .timer .minutes-wrapper:hover,
 .timer .seconds-wrapper:hover {
-  // background: #e75967 url('/assets/pattern-2.png');
-  background: image-url('/assets/pattern-2.png');
+  // background: #e75967 url('pattern-2.png');
+  background: url('pattern-2.png');
   background-color: #e75967;
   text-shadow: none;
 }
@@ -431,8 +431,8 @@ a:hover { text-decoration: none; background-color: #ffffff; }
 
 /* ================== CALL TO ACTION WRAP SECTIONS & HELPERS ================== */
 #cta01 {
-  // background: url('/assets/cta01.jpg') no-repeat center top;
-  background: image-url('/assets/cta01.jpg') no-repeat center top;
+  // background: url('cta01.jpg') no-repeat center top;
+  background: url('cta01.jpg') no-repeat center top;
   background-color: rgb(44, 44, 44);
   margin-top: 0px;
   padding-top:100px;
@@ -474,8 +474,8 @@ a:hover { text-decoration: none; background-color: #ffffff; }
 
 
 #cta02 {
-  // background: url('/assets/cta02.jpg') no-repeat center top;
-  background: image-url('/assets/cta02.jpg') no-repeat center top;
+  // background: url('cta02.jpg') no-repeat center top;
+  background: url('cta02.jpg') no-repeat center top;
   background-color: rgb(55, 36, 18);
   margin-top: 0px;
   padding-top:100px;
@@ -504,8 +504,8 @@ a:hover { text-decoration: none; background-color: #ffffff; }
 
 
 #cta03 {
-  // background: url('/assets/cta01.jpg') no-repeat center top;
-  background: image-url('/assets/cta01.jpg') no-repeat center top;
+  // background: url('cta01.jpg') no-repeat center top;
+  background: url('cta01.jpg') no-repeat center top;
   background-color: rgb(44, 44, 44);
   margin-top: 0px;
   padding-top:50px;
