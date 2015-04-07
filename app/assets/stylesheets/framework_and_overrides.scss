@@ -731,7 +731,11 @@ $screen-lg-min: 1200px;
     }
   }
 
-/* Medium devices (desktops, 992px and up) */
+span.last_note {
+  font-size: 11px;
+}
+  
+  /* Medium devices (desktops, 992px and up) */
   @media (min-width: $screen-md-min) {
     /* ... */
   }
