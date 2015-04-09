@@ -21,6 +21,7 @@ gem 'high_voltage' #  for static pages like “about”
 gem 'simple_form' # forms made easy
 gem "font-awesome-rails"
 gem 'fancybox2-rails', '~> 0.2.8'
+gem 'friendly_id', '~> 5.0.0'
 
 group :development, :test do
   gem 'sqlite3', '1.3.10'
@@ -36,10 +37,10 @@ group :development do
 end
 
 group :development, :production do
-  gem 'pg', '0.18.1'
+  gem 'pg'
 end
 
 group :production do
-  gem 'rails_12factor', '0.0.3'
+  gem 'rails_12factor'
   gem 'thin'
 end
