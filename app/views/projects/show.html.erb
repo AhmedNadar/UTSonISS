@@ -1,0 +1,24 @@
+<% content_for :title do %>
+	<%= @project.name %>
+<% end %>
+
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @project.name %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @project.description %>
+  <p>before</p>
+  <%= @project.students.each do |s| %>
+		<p> <%= s.name %> </p>
+		<p>inside</p>
+  <% end %>
+  <p>after</p>
+</p>
+
+<%= link_to 'Edit', edit_project_path(@project) %> |
+<%= link_to 'Back', projects_admin_path %>

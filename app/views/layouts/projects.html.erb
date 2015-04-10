@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%= render 'application/google_fonts' %>
+    <%= stylesheet_link_tag 'application', media: 'all' %>
+    <%#= javascript_include_tag 'application' %>
+    <%= csrf_meta_tags %>
+    <%= render 'application/meta' %>
+    
+    
+    
+    <title>UTS on ISS Projects and Teams  <%= yield :title %></title>
+    
+    <%= render 'application/open_graph' %>
+    <!-- Fav Icon -->
+    <link rel="shortcut icon" href="/assets/favicon.ico">
+    <%= render 'application/map' %>
+    <%= render 'application/html5_shim' %>
+    <%= render 'application/add_this_header' %>
+  </head>
+  <body id="page-top" class="index" cz-shortcut-listen="true">
+    <%= render 'application/browsehappy' %>
+    <%= render 'layouts/pages_navigation' %>
+    <%= render 'layouts/pages_here' %>
+
+      <%= yield %>
+
+    <%= render 'layouts/action1' %>
+    <%= render 'pages/contact' %>
+    <div class="container">
+      <%= render 'layouts/social' %>
+      </div>
+    <%= render "javascript" %>
+  </body>
+</html>
+
+
