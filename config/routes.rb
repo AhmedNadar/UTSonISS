@@ -1,7 +1,5 @@
 Rails.application.routes.draw do
 
-  resources :students
-
   root 'contacts#new'
   
   get "idea",     to: 'pages#idea',     as: :the_idea
@@ -10,11 +8,11 @@ Rails.application.routes.draw do
 
   resource  :contacts, only: [:new, :create]
   
-  resources :projects do
-    resources :students
-  end
+  # resources :projects do
+  #   resources :students
+  # end
 
-  resources :categories
+  # resources :categories
 
-	get '/projects/admin', controller: 'projects', action: 'admin'
+	# get '/projects/admin', controller: 'projects', action: 'admin'
 end
