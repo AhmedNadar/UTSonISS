@@ -46,6 +46,9 @@ h6 {
   font-weight: 700;
 }
 
+.margin-bottom-30{
+  margin-bottom: 30px;
+}
 .img-centered {
   margin: 0 auto;
 }
@@ -569,6 +572,14 @@ section#news .media p {
   font-size: 16px;
 }
 
+section#news p.posts-meta {
+  margin-bottom: 20px;
+  font-size: 1.3rem;
+  span{
+    font-weight: bold;
+  }
+}
+
 section#about .mt,
 section#sponsors .mt,
 section#news .mt{
@@ -679,6 +690,77 @@ footer ul.quicklinks {
   font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
   line-height: 40px;
 }
+
+
+  /* HEADER SECTION */
+#h {
+  /*background: url('/assets/projects/view-to-earth.jpg') no-repeat center top;*/
+  padding-top: 150px;
+  text-align:center;
+  background-attachment: relative;
+  background-position: center center;
+  min-height: 700px;
+  width: 100%;
+  -webkit-background-size: 100%;
+  -moz-background-size: 100%;
+  -o-background-size: 100%;
+  background-size: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+#h h1 {
+  font-size: 43px;
+  color: #ffffff;
+  text-shadow: 5px -5px 5px rgba(34, 34, 34, 1);
+}
+#h h3 {
+  text-shadow: 3px -3px 3px rgba(0, 0, 0, 1);
+  text-transform: lowercase;
+  font-weight: 700;
+}
+#h a h3{
+  color: #fed136;
+}
+.hero-play-btn {
+  height: 99px;
+  width: 99px;
+  background: url('assets/play-btn.png') no-repeat center center;
+  display: block;
+  text-indent: -99999px;
+  margin: 80px auto 260px;
+  transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -webkit-transition: all 1s ease;
+  -o-transition: all 1s ease;
+}
+.hero-play-btn:hover, .hero-play-btn:focus {
+  background-color: transparent;
+  transform: translate(0, -15px);
+  -webkit-transform: translate(0, -15px);
+  -o-transform: translate(0, -15px);
+  -moz-transform: translate(0, -15px);
+}
+.info {
+  margin-top: 30px;
+}
+.info i {
+  float: left;
+  margin-right: 20px;
+  display: block;
+  font-size: 50px;
+  margin-bottom: 50px;
+}
+.info .small {
+  font-size: 14px;
+  font-weight: 700;
+}
+.info h4 {
+  font-weight: 700;
+}
+
+
 
 /*ul.social-buttons {
     margin-bottom: 0;
@@ -918,12 +1000,14 @@ section#news .media a:hover {
   }
 
 section#about,
-section#idea,
 section#history,
 section#sponsors
 {
   background-color: #ffffff;
   padding: 100px;
+}
+section#idea{
+ padding: 50px 0; 
 }
   section#sponsors h4{
     font-weight: 900;
