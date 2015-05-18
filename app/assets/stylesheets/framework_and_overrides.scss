@@ -733,8 +733,12 @@ $screen-lg-min: 1200px;
 
 span.last_note {
   font-size: 11px;
+  background-color: rgb(231, 89, 103);
+  padding: 5px;
+  color: #fff;
+  font-weight: bold;
 }
-  
+
   /* Medium devices (desktops, 992px and up) */
   @media (min-width: $screen-md-min) {
     /* ... */
