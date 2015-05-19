@@ -26,5 +26,5 @@ module Uts
     config.assets.initialize_on_precompile = false
     config.assets.paths << Rails.root.join("app", "assets", "fonts")
   end
-  ENV.update YAML.load(File.read(File.expand_path('../application.yml', __FILE__)))
+  # ENV.update YAML.load(File.read(File.expand_path('../application.yml', __FILE__)))
 end
