@@ -7,12 +7,13 @@ Rails.application.routes.draw do
   get "idea",     to: 'pages#idea',     as: :the_idea
   get "thankyou", to: 'pages#thankyou', as: :thankyou
 
-  get "projects",        to: 'projects#all',        as: :projects
-  get "honorable-teams", to: 'projects#honorable',  as: :honorable
-  get "semi-final",      to: 'projects#semi_final', as: :semi_final
-  get "final",           to: 'projects#final',      as: :final
-  get "judges",         to: 'projects#judges',    as: :judges
-  get "osc",             to: 'projects#osc',        as: :osc
+  get "projects",        to: 'projects#all',          as: :projects
+  get "honorable-teams", to: 'projects#honorable',    as: :honorable
+  get "semi-final",      to: 'projects#semi_final',   as: :semi_final
+  get "final",           to: 'projects#final',        as: :final
+  get "judges",          to: 'projects#judges',       as: :judges
+  get "experiment",      to: 'projects#experiment',   as: :experiment
+  get "osc",             to: 'projects#osc',          as: :osc
 
 
   resource  :contacts, only: [:new, :create]

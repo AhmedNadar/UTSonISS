@@ -9,6 +9,23 @@
               <hr>
               <div class="media margin-bottom-30">
                 <div class="media-left">
+                  <%= link_to experiment_path do %>
+                    <%= image_tag "projects/microgravity_experiment.jpg", class: "media-object", alt: "Microgravity Experiment Succeeded", title: "Microgravity Experiment Succeeded", data: {holder_rendered: "true"}, width: '150'%>
+                  <% end %>
+                </div>
+                <div class="media-body">
+                  <p class="posts-meta"><span>Suzanne Monir</span> wrote on January 25, 2016</p>
+                  <%= link_to experiment_path do %>
+                    <h4 class="media-heading">Microgravity Experiment Succeeded</h4>
+                  <% end %>
+                  <p>Ontario High School Students have successfully completed competition for Microgravity Experiment –  expected launch date April 2016</p>
+                </div>
+              </div>
+              <hr/>
+
+
+              <div class="media margin-bottom-30">
+                <div class="media-left">
                   <%= link_to projects_path do %>
                     <%= image_tag "projects/a-message.png", class: "media-object", alt: "A message", title: "A message", data: {holder_rendered: "true"}, width: '150'%>
                   <% end %>

@@ -9,7 +9,7 @@ body {
 p, ol, ul, td {
   font-family: verdana, arial, helvetica, sans-serif;
   font-size: 13px;
-  line-height: 18px;
+  line-height: 22px;
 }
 
 pre {
@@ -65,5 +65,22 @@ div {
   ul li {
     font-size: 12px;
     list-style: square;
+  }
+}
+.spread{
+  ul {
+    padding: 0 !important;
+    margin: 0 0 .7em 0 !important;
+    list-style: none !important;
+    li {
+      display: block;
+      float: left;
+      margin: 0 10px 5px 0 !important;
+      height: 25px;
+    }
+  }
+  p {
+    line-height: 16px;
+    margin-bottom: 1rem;
   }
 }
