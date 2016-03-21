@@ -1,0 +1,58 @@
+<style type="text/css">
+  section#gallery a {
+    /* color: #e75967; */
+    display: block;
+    width: auto;
+    height: auto;
+    border: 1px solid #DBDBDB;
+    padding: 5px;
+    margin-bottom: 15px;
+    background-color: rgba(245, 245, 245, 0.16);
+    text-align: center;
+  }
+  section#gallery a img {
+    width: 100%;
+    height: auto;
+    left: 0;
+    margin: 0 auto;
+    top: 0;
+    position: relative;
+    padding: 0;
+  }
+</style>
+
+<!-- sponsors -->
+<section id="gallery">
+  <div class="container">
+    <div class="row mt centered">
+      <div class="col-lg-4 col-lg-offset-4">
+        <h3>Event Gallery</h3>
+        <hr>
+      </div><!-- /col-lg-4 -->
+    </div><!-- /row -->
+    <div class="row">
+      <div class="centered col-sm-12 col-xs-12">
+
+        <div class="col-xs-12 col-sm-6">
+          <%= link_to "#" do %>
+            <%= image_tag "team/1_aerospace_2016.jpg", alt: "Aerospace Showcase Toronto 2016", title: "Aerospace Showcase Toronto 2016" %>
+            <div class="caption">
+              <!-- <h4>Canadian Space Society</h4> -->
+            </div>
+          <% end %>
+        </div>
+
+        <div class="col-xs-12 col-sm-6">
+          <%= link_to "#" do %>
+            <%= image_tag "team/2_aerospace_2016.jpg", alt: "Aerospace Showcase Toronto 2016", title: "Aerospace Showcase Toronto 2016" %>
+            <div class="caption">
+              <!-- <h4>Canadian Space Society</h4> -->
+            </div>
+          <% end %>
+        </div>
+
+
+      </div><!-- /col-sm-12 -->
+    </div><!-- /row -->
+  </div><!-- /container -->
+</section>

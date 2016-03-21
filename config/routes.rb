@@ -13,6 +13,7 @@ Rails.application.routes.draw do
   get "final",           to: 'projects#final',        as: :final
   get "judges",          to: 'projects#judges',       as: :judges
   get "experiment",      to: 'projects#experiment',   as: :experiment
+  get "aerospace2016",      to: 'projects#aerospace2016',   as: :aerospace2016
   get "osc",             to: 'projects#osc',          as: :osc
 
 

@@ -510,7 +510,7 @@ aside.clients img {
 /*------------------*/
 /* Section Sponsors */
 
-section#sponsors a {
+section#sponsors a, section#gallery a {
   color: #e75967;
   display: block;
   width: auto;
@@ -521,17 +521,17 @@ section#sponsors a {
   background-color: rgba(245, 245, 245, 0.16);
   text-align: center;
 }
-section#sponsors a:hover {
+section#sponsors a:hover, section#gallery a:hover {
   background-color: rgba(0, 0, 0, 0.03);
 }
-section#sponsors a img {
+section#sponsors a img, section#gallery a img {
   top: 50%;
   left: 50%;
   position: absolute;
   height: 100%;
   width: auto;
 }
-section#sponsors h4{
+section#sponsors h4 , section#gallery h4 {
   font-weight: 600;
   font-size: 14px;
 }
@@ -545,7 +545,8 @@ section#idea p{
 section#about,
 section#idea,
 section#history,
-section#sponsors
+section#sponsors,
+section#gallery
 {
   padding: 10px;
   background-color: #ffffff;
@@ -582,6 +583,7 @@ section#news p.posts-meta {
 
 section#about .mt,
 section#sponsors .mt,
+section#gallery .mt,
 section#news .mt{
   margin-top: 0;
 }
@@ -1007,7 +1009,7 @@ section#sponsors
   padding: 100px;
 }
 section#idea{
- padding: 50px 0; 
+ padding: 50px 0;
 }
   section#sponsors h4{
     font-weight: 900;

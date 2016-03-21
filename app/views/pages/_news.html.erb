@@ -7,6 +7,23 @@
             <div class="col-sm-8">
               <h2>News and update</h2>
               <hr>
+
+              <div class="media margin-bottom-30">
+                <div class="media-left">
+                  <%= link_to aerospace2016_path do %>
+                    <%= image_tag "projects/SpaceAero.gif", class: "media-object", alt: "Microgravity Experiment Succeeded", title: "Microgravity Experiment Succeeded", data: {holder_rendered: "true"}, width: '150'%>
+                  <% end %>
+                </div>
+                <div class="media-body">
+                  <p class="posts-meta"><span>Suzanne Monir</span> wrote on March 20, 2016</p>
+                  <%= link_to aerospace2016_path do %>
+                    <h4 class="media-heading">the Aerospace Showcase 2016 event</h4>
+                  <% end %>
+                  <p>The Aerospace Showcase –  was the official unveiling event and awards ceremony featuring UTAT’s latest fleet of aircraft and spacecraft. </p>
+                </div>
+              </div>
+              <hr/>
+
               <div class="media margin-bottom-30">
                 <div class="media-left">
                   <%= link_to experiment_path do %>
