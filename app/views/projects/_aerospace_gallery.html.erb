@@ -19,7 +19,53 @@
     position: relative;
     padding: 0;
   }
+
+  section#gallery a img {
+    height: auto;
+    max-width: 100%;
+    max-width: 640px;
+    -moz-transition: all 1s;
+    -ms-transition: all 1s;
+    -o-transition: all 1s;
+    -webkit-transition: all 1s;
+    transition: all 1s;
+  }
+  section#gallery a img.expanded {
+    max-width: none;
+    max-width: 2000px;
+  }
 </style>
+<script type="text/javascript">
+  $(document).ready(function() {
+        var imageLinks = $('a[href$=".png"], a[href$=".jpg"], a[href$=".gif"], a[href$=".bmp"]');
+        if (imageLinks.children('img').length) {
+            imageLinks.children('img').each(function() {
+                var currentTitle = $(this).attr('title');
+                $(this).attr('title', currentTitle + ' (click to enlarge image)');
+            });
+            imageLinks.click(function(e) {
+                e.preventDefault();
+                $(this).children('img').toggleClass('expanded');
+            });
+        }
+
+        function toggleExpand() {
+            var expanded = true;
+            $('img').each(function() {
+                if (!$(this).hasClass('expanded')) {
+                    expanded = false;
+                    return false;
+                }
+            });
+            $('a[href$=".png"], a[href$=".jpg"], a[href$=".gif"], a[href$=".bmp"]').children('img').each(function() {
+                if (expanded)
+                    $(this).removeClass('expanded');
+                else
+                    $(this).addClass('expanded');
+            });
+        }
+    });
+</script>
 
 <!-- sponsors -->
 <section id="gallery">
@@ -33,25 +79,74 @@
     <div class="row">
       <div class="centered col-sm-12 col-xs-12">
 
+      <a href="javascript:void(0)" onclick="toggleExpand()">Click here to enlarge all images.</a>
+
+
         <div class="col-xs-12 col-sm-6">
-          <%= link_to "#" do %>
+          <%= link_to "javascript:void(0)" do %>
             <%= image_tag "team/1_aerospace_2016.jpg", alt: "Aerospace Showcase Toronto 2016", title: "Aerospace Showcase Toronto 2016" %>
-            <div class="caption">
-              <!-- <h4>Canadian Space Society</h4> -->
-            </div>
           <% end %>
         </div>
 
         <div class="col-xs-12 col-sm-6">
-          <%= link_to "#" do %>
+          <%= link_to "javascript:void(0)"  do %>
             <%= image_tag "team/2_aerospace_2016.jpg", alt: "Aerospace Showcase Toronto 2016", title: "Aerospace Showcase Toronto 2016" %>
-            <div class="caption">
-              <!-- <h4>Canadian Space Society</h4> -->
-            </div>
           <% end %>
         </div>
 
+        <div class="col-xs-12 col-sm-6">
+          <%= link_to "javascript:void(0)"  do %>
+            <%= image_tag "team/3_aerospace_2016.jpg", alt: "Aerospace Showcase Toronto 2016", title: "Aerospace Showcase Toronto 2016" %>
+          <% end %>
+        </div>
 
+        <div class="col-xs-12 col-sm-6">
+          <%= link_to "javascript:void(0)"  do %>
+            <%= image_tag "team/4_aerospace_2016.jpg", alt: "Aerospace Showcase Toronto 2016", title: "Aerospace Showcase Toronto 2016" %>
+          <% end %>
+        </div>
+
+        <div class="col-xs-12 col-sm-6">
+          <%= link_to "javascript:void(0)"  do %>
+            <%= image_tag "team/5_aerospace_2016.jpg", alt: "Aerospace Showcase Toronto 2016", title: "Aerospace Showcase Toronto 2016" %>
+          <% end %>
+        </div>
+
+        <div class="col-xs-12 col-sm-6">
+          <%= link_to "javascript:void(0)"  do %>
+            <%= image_tag "team/6_aerospace_2016.jpg", alt: "Aerospace Showcase Toronto 2016", title: "Aerospace Showcase Toronto 2016" %>
+          <% end %>
+        </div>
+
+        <div class="col-xs-12 col-sm-6">
+          <%= link_to "javascript:void(0)"  do %>
+            <%= image_tag "team/7_aerospace_2016.jpg", alt: "Aerospace Showcase Toronto 2016", title: "Aerospace Showcase Toronto 2016" %>
+          <% end %>
+        </div>
+
+        <div class="col-xs-12 col-sm-6">
+          <%= link_to "javascript:void(0)"  do %>
+            <%= image_tag "team/8_aerospace_2016.jpg", alt: "Aerospace Showcase Toronto 2016", title: "Aerospace Showcase Toronto 2016" %>
+          <% end %>
+        </div>
+
+        <div class="col-xs-12 col-sm-6">
+          <%= link_to "javascript:void(0)"  do %>
+            <%= image_tag "team/9_aerospace_2016.jpg", alt: "Aerospace Showcase Toronto 2016", title: "Aerospace Showcase Toronto 2016" %>
+          <% end %>
+        </div>
+
+        <div class="col-xs-12 col-sm-6">
+          <%= link_to "javascript:void(0)"  do %>
+            <%= image_tag "team/10_aerospace_2016.jpg", alt: "Aerospace Showcase Toronto 2016", title: "Aerospace Showcase Toronto 2016" %>
+          <% end %>
+        </div>
+
+        <div class="col-xs-12 col-sm-6">
+          <%= link_to "javascript:void(0)"  do %>
+            <%= image_tag "team/11_aerospace_2016.jpg", alt: "Aerospace Showcase Toronto 2016", title: "Aerospace Showcase Toronto 2016" %>
+          <% end %>
+        </div>
       </div><!-- /col-sm-12 -->
     </div><!-- /row -->
   </div><!-- /container -->
