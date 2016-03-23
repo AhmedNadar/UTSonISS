@@ -29,4 +29,7 @@ class ProjectsController < ApplicationController
   def osc
     # at Ontario Scinece Center
   end
+
+  def spaceconf; end
+  def aerospace2016; end
 end

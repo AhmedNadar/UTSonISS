@@ -35,37 +35,7 @@
     max-width: 2000px;
   }
 </style>
-<script type="text/javascript">
-  $(document).ready(function() {
-        var imageLinks = $('a[href$=".png"], a[href$=".jpg"], a[href$=".gif"], a[href$=".bmp"]');
-        if (imageLinks.children('img').length) {
-            imageLinks.children('img').each(function() {
-                var currentTitle = $(this).attr('title');
-                $(this).attr('title', currentTitle + ' (click to enlarge image)');
-            });
-            imageLinks.click(function(e) {
-                e.preventDefault();
-                $(this).children('img').toggleClass('expanded');
-            });
-        }
 
-        function toggleExpand() {
-            var expanded = true;
-            $('img').each(function() {
-                if (!$(this).hasClass('expanded')) {
-                    expanded = false;
-                    return false;
-                }
-            });
-            $('a[href$=".png"], a[href$=".jpg"], a[href$=".gif"], a[href$=".bmp"]').children('img').each(function() {
-                if (expanded)
-                    $(this).removeClass('expanded');
-                else
-                    $(this).addClass('expanded');
-            });
-        }
-    });
-</script>
 
 <!-- sponsors -->
 <section id="gallery">
