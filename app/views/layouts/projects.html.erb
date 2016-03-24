@@ -7,9 +7,7 @@
     <%= csrf_meta_tags %>
     <%= render 'application/meta' %>
 
-
-
-    <title>UTS on ISS Projects and Experiment  <%= yield :title %></title>
+    <title><%= yield(:title) %> | UTS on ISS</title>
 
     <%= render 'application/open_graph' %>
     <!-- Fav Icon -->

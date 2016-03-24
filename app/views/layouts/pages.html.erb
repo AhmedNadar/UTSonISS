@@ -7,9 +7,9 @@
     <%#= javascript_include_tag 'application' %>
     <%= csrf_meta_tags %>
     <%= render 'application/meta' %>
-  
-    <title><%= content_for?(:title) ? yield(:title) + " UTS on ISS kickstarter campaign" : "UTS on ISS kickstarter campaign" %></title>
-  
+
+    <title><%= yield(:title) %> | UTS on ISS</title>
+
     <%= render 'application/open_graph' %>
     <!-- Fav Icon -->
     <link rel="shortcut icon" href="/assets/favicon.ico">
