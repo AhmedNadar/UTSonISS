@@ -8,10 +8,28 @@
               <h2>News and update</h2>
               <hr>
 
+
+              <div class="media margin-bottom-30">
+                <div class="media-left">
+                  <%= link_to thelaunch_path do %>
+                    <%= image_tag "projects/spacex-launch.jpg", class: "media-object", alt: "We are ready for launch", title: "We are ready for launch", data: {holder_rendered: "true"}, width: '150'%>
+                  <% end %>
+                </div>
+                <div class="media-body">
+                  <p class="posts-meta"><span>Suzanne Monir</span> wrote on May 16, 2016</p>
+                  <%= link_to thelaunch_path do %>
+                    <h4 class="media-heading">We are ready for launch to the ISS</h4>
+                  <% end %>
+                  <p>We are heading to Cape Canaveral Kennedy Space Centre on June 27th to watch the SpaceX Dragon containing our experiment head to the ISS.</p>
+                </div>
+              </div>
+              <hr/>
+
+
               <div class="media margin-bottom-30">
                 <div class="media-left">
                   <%= link_to spaceconf_path do %>
-                    <%= image_tag "projects/a_hansen_lr.jpg", class: "media-object", alt: "Microgravity Experiment Succeeded", title: "Microgravity Experiment Succeeded", data: {holder_rendered: "true"}, width: '150'%>
+                    <%= image_tag "projects/a_hansen_lr.jpg", class: "media-object", alt: "Thinking outside of the globe with Astronaut Jeremy R. Hansen", title: "Thinking outside of the globe with Astronaut Jeremy R. Hansen", data: {holder_rendered: "true"}, width: '150'%>
                   <% end %>
                 </div>
                 <div class="media-body">
@@ -28,7 +46,7 @@
               <div class="media margin-bottom-30">
                 <div class="media-left">
                   <%= link_to aerospace2016_path do %>
-                    <%= image_tag "projects/SpaceAero.gif", class: "media-object", alt: "Microgravity Experiment Succeeded", title: "Microgravity Experiment Succeeded", data: {holder_rendered: "true"}, width: '150'%>
+                    <%= image_tag "projects/SpaceAero.gif", class: "media-object", alt: "the Aerospace Showcase 2016 event", title: "the Aerospace Showcase 2016 event", data: {holder_rendered: "true"}, width: '150'%>
                   <% end %>
                 </div>
                 <div class="media-body">

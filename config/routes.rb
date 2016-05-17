@@ -16,6 +16,7 @@ Rails.application.routes.draw do
   get "aerospace2016",   to: 'projects#aerospace2016',as: :aerospace2016
   get "spaceconf",       to: 'projects#spaceconf',    as: :spaceconf
   get "osc",             to: 'projects#osc',          as: :osc
+  get "thelaunch",       to: 'projects#thelaunch',    as: :thelaunch
 
 
   resource  :contacts, only: [:new, :create]

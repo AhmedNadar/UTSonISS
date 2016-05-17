@@ -32,4 +32,5 @@ class ProjectsController < ApplicationController
 
   def spaceconf; end
   def aerospace2016; end
+  def thelaunch; end
 end
